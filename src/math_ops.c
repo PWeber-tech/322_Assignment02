@@ -1,3 +1,5 @@
+#include "math_ops.h"
+
 // --------- FUNCTION IMPLEMENTATIONS ------------
 
 
@@ -21,7 +23,7 @@ float cube(float x)
     return x * x * x;
 }
 
-float pow(float base, int exponent ) 
+float my_pow(float base, int exponent ) 
 {
     float res = 1;
     for(int i = 0; i < exponent; i++) 
@@ -36,7 +38,8 @@ float sub(float a, float b)
     return a - b;
 }
 
-float div(float a, float b)
+float my_div(float a, float b)
 {
-    return a / b;
+    float x = a / b;
+    return x;
 }
