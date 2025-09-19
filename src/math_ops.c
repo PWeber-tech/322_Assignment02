@@ -51,14 +51,18 @@ float sin(int x)
     int result = 0;
     for(int i = 0; i < steps; i++)
     {
-        int x = (my_pow(x,(2*i)+1))/factorial((2*i)+1);
+        int b = (my_pow(x,(2*i)+1))/factorial((2*i)+1);
         if(sign == 1){
-            result += x;
+            result += b;
             sign = 0;
         }
         else{
-            result -= x;
+            result -= b;
             sign = 1;
         }
     }
+}
+
+int factorial(){
+
 }
