@@ -43,3 +43,22 @@ float my_div(float a, float b)
     float x = a / b;
     return x;
 }
+
+float sin(int x)
+{
+    int steps = 10;
+    int sign = 1;
+    int result = 0;
+    for(int i = 0; i < steps; i++)
+    {
+        int x = (my_pow(x,(2*i)+1))/factorial((2*i)+1);
+        if(sign == 1){
+            result += x;
+            sign = 0;
+        }
+        else{
+            result -= x;
+            sign = 1;
+        }
+    }
+}
