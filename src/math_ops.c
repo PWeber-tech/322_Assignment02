@@ -63,6 +63,12 @@ float sin(int x)
     }
 }
 
-int factorial(){
-
+int factorial(int x){
+    int j = x;
+    int result = 1;
+    while(j > 0){
+        result = result * j;
+        j -= 1;
+    }
+    return result;
 }
