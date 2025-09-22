@@ -50,6 +50,11 @@ int main(int argc, char *argv[])
             printf("  --power a b          Raise a to the power of b\n");
             printf("  --square a           Square of a number\n");
             printf("  --cube a             Cube of a number\n");
+            printf("  --sin a              Sin of a number\n");
+        }
+        else if(strcmp(argv[1], "--sin") == 0){
+          float res = sin(atof(argv[2]));
+          printf("%f\n", res);
         }
         else if(strcmp(argv[1], "--multiplication") == 0)
         {
