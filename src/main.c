@@ -53,7 +53,7 @@ int main(int argc, char *argv[])
             printf("  --sin a              Sin of a number\n");
         }
         else if(strcmp(argv[1], "--sin") == 0){
-          float res = sin(atof(argv[2]));
+          float res = my_sin(atof(argv[2]));
           printf("%f\n", res);
         }
         else if(strcmp(argv[1], "--multiplication") == 0)
