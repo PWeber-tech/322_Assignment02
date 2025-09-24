@@ -11,7 +11,8 @@ float cube(float x);
 float my_pow(float base, int exponent);
 float sub(float a, float b);
 float my_div(float a, float b);
-int my_factorial(int x);
+float my_factorial(float x);
 float my_sin(float x);
+float my_cos(float x);
 
 #endif

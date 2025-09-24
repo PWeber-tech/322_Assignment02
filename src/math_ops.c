@@ -46,9 +46,9 @@ float my_div(float a, float b)
     return x;
 }
 
-int my_factorial(int x){
+float my_factorial(float x){
     int j = x;
-    int result = 1;
+    float result = 1;
     while(j > 0){
         result = result * j;
         j -= 1;
@@ -60,4 +60,25 @@ float my_sin(float x)
 {
     // change applied inside function body
     return 1.0;
+}
+
+float my_cos(float x)
+{
+    float y = x * (M_PI / 180);
+    int steps = 10;
+    int sign = 1;
+    float result = 0;
+    for(int i = 0; i < steps; i++)
+    {
+        float b = (my_pow(y,(2*i)))/ my_factorial((2*i));
+        if(sign == 1){
+            result += b;
+            sign = 0;
+        }
+        else{
+            result -= b;
+            sign = 1;
+        }
+    }
+    return result;
 }

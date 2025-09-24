@@ -51,6 +51,7 @@ int main(int argc, char *argv[])
             printf("  --square a           Square of a number\n");
             printf("  --cube a             Cube of a number\n");
             printf("  --sin a              Sin of a number\n");
+            printf("  --cos a              Cos of a number\n");
         }
         else if(strcmp(argv[1], "--sin") == 0){
           float res = my_sin(atof(argv[2]));
@@ -94,7 +95,11 @@ int main(int argc, char *argv[])
         else if(strcmp(argv[1], "--factorial") == 0)
         {
           int res = my_factorial(atof(argv[2]));
-          printf("%i\n", res);  
+          printf("%f\n", res);  
+        }
+        else if(strcmp(argv[1], "--cos") == 0){
+          float res = my_cos(atof(argv[2]));
+          printf("%f\n", res);
         }
         return 0;
     }
