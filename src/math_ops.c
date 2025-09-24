@@ -58,8 +58,23 @@ float my_factorial(float x){
 
 float my_sin(float x)
 {
-    // change applied inside function body
-    return 1.0;
+    float y = x * (M_PI / 180);
+    int steps = 10;
+    int sign = 1;
+    float result = 0;
+    for(int i = 0; i < steps; i++)
+    {
+        float b = (my_pow(y,(2*i)+1))/ my_factorial((2*i)+1);
+        if(sign == 1){
+            result += b;
+            sign = 0;
+        }
+        else{
+            result -= b;
+            sign = 1;
+        }
+    }
+    return result;
 }
 
 float my_cos(float x)
