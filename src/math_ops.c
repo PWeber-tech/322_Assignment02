@@ -58,21 +58,6 @@ int my_factorial(int x){
 
 float my_sin(float x)
 {
-    x = x * (180.0 / M_PI);
-    int steps = 10;
-    int sign = 1;
-    int result = 0;
-    for(int i = 0; i < steps; i++)
-    {
-        int b = (my_pow(x,(2*i)+1))/my_factorial((2*i)+1);
-        if(sign == 1){
-            result += b;
-            sign = 0;
-        }
-        else{
-            result -= b;
-            sign = 1;
-        }
-    }
-    return result;
+    // change applied inside function body
+    return 1.0;
 }

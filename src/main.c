@@ -91,6 +91,11 @@ int main(int argc, char *argv[])
           float res = cube(atof(argv[2]));
           printf("%f\n", res);  
         }
+        else if(strcmp(argv[1], "--factorial") == 0)
+        {
+          int res = my_factorial(atof(argv[2]));
+          printf("%i\n", res);  
+        }
         return 0;
     }
     else
